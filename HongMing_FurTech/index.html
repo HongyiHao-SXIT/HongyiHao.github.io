@@ -17,10 +17,17 @@
      <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
      <!-- MAIN CSS -->
-     <link rel="stylesheet" href="css/templatemo-style.css">
+     <link rel="stylesheet" href="css/main-style.css">
+     <script src="https://cdn.jsdelivr.net/npm/echarts@5.6.0/dist/echarts.min.js"></script>
 
 </head>
+
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+     <div id="charts"></div>
+     <script>
+          var myChart = echarts.init(document.getElementById('charts'));
+     </script>
 
      <!-- PRE LOADER -->
      <section class="preloader">
@@ -621,7 +628,7 @@
                     <div class="col-md-6 col-sm-12">
                          <form id="contact-form" role="form" action="" method="post">
                               <div class="section-title">
-                                   <h2>Contact us <small>If you are interested in us. Let's talk!</small></h2>
+                                   <h2>Contact us <small>If you are also interested in STEM subjects. Let's talk!</small></h2>
                               </div>
 
                               <div class="col-md-12 col-sm-12">
@@ -647,8 +654,7 @@
 
                </div>
           </div>
-     </section>       
-
+     </section>
 
      <!-- FOOTER -->
      <footer id="footer">
@@ -727,5 +733,6 @@
      <script src="js/owl.carousel.min.js"></script>
      <script src="js/smoothscroll.js"></script>
      <script src="js/custom.js"></script>
+     <script src="js/charts.js"></script>
 
 </body>

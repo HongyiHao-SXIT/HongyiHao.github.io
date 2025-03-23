@@ -1,0 +1,16 @@
+#main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999; 
+  opacity: 1;
+  background-image: url(../HongMing_FurTech/images/HongMing_Logo.png);
+  background-size: cover;
+  transition: opacity 1.5s ease;
+}
+
+.fade-out {
+  opacity: 0;
+}

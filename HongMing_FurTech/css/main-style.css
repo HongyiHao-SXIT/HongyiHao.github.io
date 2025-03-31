@@ -471,15 +471,15 @@
       PROJECTS            
   -----------------------------------------*/
 
-  #courses .section-title {
+  #projects .section-title {
     text-align: center;
   }
 
-  #courses .owl-theme .owl-nav {
+  #projects .owl-theme .owl-nav {
     margin-top: 30px;
   }
 
-  #courses .owl-theme .owl-nav [class*=owl-] {
+  #projects .owl-theme .owl-nav [class*=owl-] {
     border-radius: 2px;
     font-size: 16px;
     width: 30px;
@@ -489,20 +489,20 @@
     padding: 0;
   }
 
-  .courses-thumb {
+  .projects-thumb {
     background: #f9f9f9;
     position: relative;
   }
 
-  .courses-top {
+  .projects-top {
     position: relative;
   }
 
-  .courses-image {
+  .projects-image {
     background: linear-gradient(to right, #202020, #101010);
   }
 
-  .courses-date {
+  .projects-date {
     background: linear-gradient(rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.6));
     width: 100%;
     position: absolute;
@@ -510,40 +510,40 @@
     padding: 20px 25px;
   }
 
-  .courses-date span,
-  .courses-author span {
+  .projects-date span,
+  .projects-author span {
     font-size: 14px;
     font-weight: bold;
   }
 
-  .courses-date span {
+  .projects-date span {
     color: #ffffff;
     display: inline-block;
     margin-right: 10px;
   }
 
-  .courses-detail {
+  .projects-detail {
     padding: 25px 25px 15px 25px;
   }
 
-  .courses-detail h3 {
+  .projects-detail h3 {
     margin: 0 0 2px 0;
   }
 
-  .courses-info {
+  .projects-info {
     border-top: 1px solid #f0f0f0;
     position: relative;
     clear: both;
     padding: 15px 25px;
   }
 
-  .courses-author,
-  .courses-author span {
+  .projects-author,
+  .projects-author span {
     display: inline-block;
     vertical-align: middle;
   }
 
-  .courses-author img {
+  .projects-author img {
     display: inline-block !important;
     border-radius: 50px;
     width: 50px !important;
@@ -551,12 +551,12 @@
     margin-right: 10px;
   }
 
-  .courses-price {
+  .projects-price {
     float: right;
     margin-top: 10px;
   }
 
-  .courses-price span {
+  .projects-price span {
     background: #29ca8e;
     border-radius: 2px;
     color: #ffffff;
@@ -564,7 +564,7 @@
     padding: 5px 10px;
   }
 
-  .courses-price.free span {
+  .projects-price.free span {
     background: #3f51b5;
   }
 
@@ -654,6 +654,105 @@
     font-size: 14px;
   }
 
+    /*---------------------------------------
+      BLOG             
+  -----------------------------------------*/
+  #blog .section-title {
+    text-align: center;
+  }
+
+  #blog .owl-theme .owl-nav {
+    margin-top: 30px;
+  }
+
+  #blog .owl-theme .owl-nav [class*=owl-] {
+    border-radius: 2px;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0;
+  }
+
+  .blog-thumb {
+    background: #f9f9f9;
+    position: relative;
+  }
+
+  .blog-top {
+    position: relative;
+  }
+
+  .blog-image {
+    background: linear-gradient(to right, #202020, #101010);
+  }
+
+  .blog-date {
+    background: linear-gradient(rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.6));
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 20px 25px;
+  }
+
+  .blog-date span,
+  .blog-author span {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .blog-date span {
+    color: #ffffff;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .blog-detail {
+    padding: 25px 25px 15px 25px;
+  }
+
+  .blog-detail h3 {
+    margin: 0 0 2px 0;
+  }
+
+  .blog-info {
+    border-top: 1px solid #f0f0f0;
+    position: relative;
+    clear: both;
+    padding: 15px 25px;
+  }
+
+  .blog-author,
+  .blog-author span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .blog-author img {
+    display: inline-block !important;
+    border-radius: 50px;
+    width: 50px !important;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .blog-price {
+    float: right;
+    margin-top: 10px;
+  }
+
+  .blog-price span {
+    background: #29ca8e;
+    border-radius: 2px;
+    color: #ffffff;
+    display: block;
+    padding: 5px 10px;
+  }
+
+  .blog-price.free span {
+    background: #3f51b5;
+  }
 
 
   /*---------------------------------------

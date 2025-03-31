@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog_example</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="markdown-content"></div>
+
+    <script>
+        const markdownText = `
+# Start Your Code Career
+
+### Author: Lanyi_adict   Date: 2025.03.31
+
+<hr>
+
+As you can see, this is a tutorial blog aimed at guiding you on how to kickstart your own code career. Lanyi is an outstanding software engineer in the HomeMing_Technology team and also affiliated with Shanxi Institute of Technology. (Just kidding 😜) (No he ranking at TOP 1% is his department)
+
+Alright, let's dive into this practical and powerful tutorial.
+
+## How to Choose a Great Code Editor?
+
+When it comes to code editors, which software pops into your mind first?
+
+**Is it Dev C++? Visual Studio? IDEA? PyCharm? Or Vim?**
+
+Now, I'm going to tell you about the best code editor in the world:
+
+**Visual Studio Code !!!**
+
+![vscode_logo img](images/How_to_starting/vscode_logo.png)
+
+VS Code is regarded as the top choice for several compelling reasons:
+- **Lightweight and Efficient**: It starts up quickly and consumes minimal system resources, allowing it to run smoothly even on computers with lower configurations. Whether you're writing simple scripts or handling large-scale projects, VS Code can handle them with ease.
+- **Rich Ecosystem of Extensions**: By installing various extensions, VS Code can support almost all mainstream programming languages and development frameworks. For example, if you're doing Python development, you can install the Python extension to get features like code autocompletion, syntax checking, and debugging. For front-end development, installing relevant HTML, CSS, and JavaScript extensions can significantly boost your development efficiency.
+- **Highly Customizable**: Users can freely customize the editor's theme, shortcuts, code formatting style, and more according to their preferences and work habits. This enables every developer to create a personalized development environment that suits their needs.
+- **Powerful Debugging Capabilities**: VS Code comes with a built-in debugger that supports debugging in multiple programming languages. You can set breakpoints, view variable values, and execute code step by step, making it convenient and quick to troubleshoot and fix issues in your code.
+
+In addition to the above advantages, VS Code also offers excellent team collaboration features. Through certain extensions, you can achieve functions such as simultaneous editing by multiple people and integration with version control systems.
+
+Of course, different editors have their own unique strengths, and the specific choice still depends on your programming requirements and personal preferences. However, for beginners, VS Code is undoubtedly an excellent starting point.
+
+I hope the above content will be helpful for you to choose a suitable code editor. In the following, we will continue to explore other important aspects of your code career. 
+
+## Git and Github
+
+As we all know, git is one of the most famous and impoortnat softwares in recnet years, and git also play an really importnat role in companies and researchs. 
+![git_logo img](images/How_to_starting/git_logo.png)
+`;
+
+        const html = marked.parse(markdownText);
+        const contentDiv = document.getElementById('markdown-content');
+        contentDiv.innerHTML = html;
+    </script>
+</body>
+
+</html>

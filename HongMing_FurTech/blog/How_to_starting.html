@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog_example</title>
+    <title>Blog Example</title>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -14,50 +14,142 @@
 
     <script>
         const markdownText = `
-# Start Your Code Career
+# Start Your Coding Career
 
 ### Author: Lanyi_adict   Date: 2025.03.31
 
 <hr>
 
-As you can see, this is a tutorial blog aimed at guiding you on how to kickstart your own code career. Lanyi is an outstanding software engineer in the HomeMing_Technology team and also affiliated with Shanxi Institute of Technology. (Just kidding 😜) (No he ranking at TOP 1% is his department)
+This tutorial blog guides you on how to kickstart your coding career. Lanyi is a software engineer at HomeMing Technology and also affiliated with Shanxi Institute of Technology. (Just kidding 😜) (Actually ranked in the TOP 1% of his department)
 
-Alright, let's dive into this practical and powerful tutorial.
+Let's dive into this practical tutorial.
 
 ## How to Choose a Great Code Editor?
 
-When it comes to code editors, which software pops into your mind first?
+Which code editor comes to mind first?
 
-**Is it Dev C++? Visual Studio? IDEA? PyCharm? Or Vim?**
+**Dev C++? Visual Studio? IDEA? PyCharm? Or Vim?**
 
-Now, I'm going to tell you about the best code editor in the world:
+One of the best code editors available today is:
 
-**Visual Studio Code !!!**
+**Visual Studio Code**
 
-![vscode_logo img](images/How_to_starting/vscode_logo.png)
+![VS Code Logo](images/How_to_starting/vscode_logo.png)
 
-VS Code is regarded as the top choice for several compelling reasons:
-- **Lightweight and Efficient**: It starts up quickly and consumes minimal system resources, allowing it to run smoothly even on computers with lower configurations. Whether you're writing simple scripts or handling large-scale projects, VS Code can handle them with ease.
-- **Rich Ecosystem of Extensions**: By installing various extensions, VS Code can support almost all mainstream programming languages and development frameworks. For example, if you're doing Python development, you can install the Python extension to get features like code autocompletion, syntax checking, and debugging. For front-end development, installing relevant HTML, CSS, and JavaScript extensions can significantly boost your development efficiency.
-- **Highly Customizable**: Users can freely customize the editor's theme, shortcuts, code formatting style, and more according to their preferences and work habits. This enables every developer to create a personalized development environment that suits their needs.
-- **Powerful Debugging Capabilities**: VS Code comes with a built-in debugger that supports debugging in multiple programming languages. You can set breakpoints, view variable values, and execute code step by step, making it convenient and quick to troubleshoot and fix issues in your code.
+VS Code is a top choice because:
+- **Lightweight and Efficient**: Fast startup and low resource usage
+- **Rich Extension Ecosystem**: Supports nearly all programming languages
+- **Highly Customizable**: Themes, shortcuts, and formatting styles
+- **Powerful Debugging**: Built-in debugger with breakpoints
 
-In addition to the above advantages, VS Code also offers excellent team collaboration features. Through certain extensions, you can achieve functions such as simultaneous editing by multiple people and integration with version control systems.
+It also offers excellent collaboration features through extensions.
 
-Of course, different editors have their own unique strengths, and the specific choice still depends on your programming requirements and personal preferences. However, for beginners, VS Code is undoubtedly an excellent starting point.
+While different editors have unique strengths, VS Code is an excellent starting point for beginners.
 
-I hope the above content will be helpful for you to choose a suitable code editor. In the following, we will continue to explore other important aspects of your code career. 
+## Git and GitHub
 
-## Git and Github
+Git is essential version control software used widely in industry and research.
+![Git Logo](images/How_to_starting/git_logo.png)
 
-As we all know, git is one of the most famous and impoortnat softwares in recnet years, and git also play an really importnat role in companies and researchs. 
-![git_logo img](images/How_to_starting/git_logo.png)
+
+### What is Git?
+Git is a **distributed version control system** created by Linus Torvalds that:
+✔ Tracks file changes  
+✔ Enables collaboration  
+✔ Allows version reverting  
+✔ Manages project versions  
+
+Each Git directory is a complete repository with full history.
+
+### Key Features
+
+#### 1. Version Control
+- Records file changes over time
+- Reverts to previous states
+- Tracks change authorship
+
+#### 2. Branching & Merging
+- Isolated feature branches
+- Safe branch merging
+- Conflict resolution
+
+#### 3. Distributed Development
+- Full local history
+- Offline work capability
+- Multiple remote repos
+
+#### 4. Integrity & Security
+- SHA-1 hash tracking
+- Tamper-evident commits
+
+### Core Concepts
+
+| Term | Description |
+|------|-------------|
+| Repository | Git-tracked project folder |
+| Commit | Change snapshot |
+| Branch | Development line |
+| Clone | Remote repo copy |
+| Fork | Personal project copy |
+| Merge | Branch combination |
+| Pull Request | Merge proposal |
+
+### Installation
+
+1. **Windows**: [Download installer](https://git-scm.com/download/win)
+2. **Mac**: \`brew install git\` or [download](https://git-scm.com/download/mac)
+3. **Linux**:
+   - Debian/Ubuntu: \`sudo apt install git\`
+   - Fedora: \`sudo dnf install git\`
+
+### Basic Commands
+
+\`\`\`bash
+#### Initialize repository
+git init
+
+#### Check status
+git status
+
+#### Stage changes
+git add <file>
+git add .
+
+#### Commit changes
+git commit -m "Message"
+
+#### Connect to remote
+git remote add origin <url>
+
+#### Push changes
+git push -u origin <branch>
+git push
+
+#### Pull changes
+git pull origin <branch>
+
+#### Clone repository
+git clone <url>
+\`\`\`
+
+### Why Use Git?
+🚀 **Efficiency**: Transfers only changes  
+🔒 **Safety**: No single failure point  
+🌍 **Collaboration**: Enables open source  
+⏱ **Accountability**: Tracks all changes  
+
+### Next Steps
+1. Practice basic commands
+2. Create GitHub/GitLab account
+3. Learn .gitignore
+4. Try Git GUIs (GitKraken, Sourcetree)
+
+> 💡 **Tip**: Set your identity first:
+> \`git config --global user.name "Your Name"\`
+> \`git config --global user.email "your@email.com"\`
 `;
 
-        const html = marked.parse(markdownText);
-        const contentDiv = document.getElementById('markdown-content');
-        contentDiv.innerHTML = html;
+        document.getElementById('markdown-content').innerHTML = marked.parse(markdownText);
     </script>
 </body>
-
 </html>

@@ -1,8 +1,4 @@
-const chartDom = document.getElementById('org-chart');
-const orgChart = echarts.init(chartDom);
-
-// 组织成员数据
-const orgData = {
+export const orgData = {
     categories: [
         { name: '管理层' },
         { name: '技术部' },
@@ -35,8 +31,7 @@ const orgData = {
     ]
 };
 
-// 图表配置
-const option = {
+export const getChartOption = (data) => ({
     title: {
         text: '组织成员关系图',
         subtext: '公司组织架构关系展示',
@@ -46,22 +41,22 @@ const option = {
     tooltip: {
         formatter: params => {
             if (params.dataType === 'node') {
-                return `${params.data.name} (${orgData.categories[params.data.category].name})`;
+                return `${params.data.name} (${data.categories[params.data.category].name})`;
             } else {
-                return `${orgData.nodes[params.data.source].name} → ${orgData.nodes[params.data.target].name}<br>关系: ${params.data.label}`;
+                return `${data.nodes[params.data.source].name} → ${data.nodes[params.data.target].name}<br>关系: ${params.data.label}`;
             }
         }
     },
     legend: {
-        data: orgData.categories.map(category => category.name),
+        data: data.categories.map(category => category.name),
         top: 50
     },
     series: [{
         type: 'graph',
         layout: 'force',
-        data: orgData.nodes,
-        links: orgData.links,
-        categories: orgData.categories,
+        data: data.nodes,
+        links: data.links,
+        categories: data.categories,
         roam: true,
         draggable: true,
         focusNodeAdjacency: true,
@@ -93,12 +88,13 @@ const option = {
         }
     }],
     color: ['#5470C6', '#91CC75', '#FAC858', '#EE6666', '#73C0DE']
-};
-
-// 设置选项并渲染图表
-orgChart.setOption(option);
-
-// 响应式调整
-window.addEventListener('resize', function() {
-    orgChart.resize();
 });
+
+// 图表渲染函数
+export const renderOrgChart = (containerId = 'org-chart') => {
+    // 动态加载echarts
+    return import('echarts').then(echarts => {
+        const chartDom = document.getElementById(containerId);
+        if (!chartDom) return null;
+        
+        const

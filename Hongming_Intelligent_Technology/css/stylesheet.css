@@ -1,12 +1,3 @@
-/*
-
-TemplateMo 549 Business Oriented
-
-https://templatemo.com/tm-549-business-oriented
-
-*/
-
-
 body {
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 18px;
@@ -244,8 +235,6 @@ footer {
 	height: 100%;
 }
 
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
 .tm-about-person figcaption > a {
 	z-index: 1000;
 	text-indent: 200%;
@@ -268,9 +257,6 @@ footer {
     color: #fff;
 }
 
-/*---------------*/
-/***** Milo *****/
-/*---------------*/
 
 figure.effect-milo { background: #2e5d5a; }
 

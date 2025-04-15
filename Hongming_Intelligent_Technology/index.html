@@ -1,173 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/png" href="images/HongMing_Logo.jpg">
-    <title>HongMing Intelligent Technology</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" /> 
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="fontawesome/css/all.min.css" rel="stylesheet" /> 
-    <link href="css/stylesheet.css" rel="stylesheet" />
+    <title>弘茗智能科技 | Furry大学生硬核创新团队</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 
 <body>
-    <div id="parallax-1" class="parallax-window" data-parallax="scroll" data-image-src="images/HongMing_Logo.jpg">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <div class="tm-logo">
-                        <i class="fas fa-science fa-5x mr-5"></i>
-                        <span class="text-uppercase tm-logo-text">HongMing Intelligent Technology</span>
-                    </div>
-                </div>
-            </div>
+    <nav class="navbar">
+        <div class="logo">
+            <!-- 临时LOGO占位 -->
+            <img src="img/HongMing_Logo.jpg" alt="弘茗智能科技logo">
+            <div class="logo-text">弘茗智能科技</div>
         </div>
-    </div>
-    <div class="tm-nav-container-outer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="navbar navbar-expand-lg" id="tm-main-nav">
-                        <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbar-nav" 
-                            aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="dark-blue-text"><i class="fas fa-bars"></i></span>
-                        </button>
-                        <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link tm-nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="services.html">Services</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="about.html">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="contact.html">Contact</a>
-                                </li>
-                            </ul>                            
-                        </div>                        
-                    </nav>
-                </div>
-            </div>
+        <div class="nav-links">
+            <a href="#products">产品方案</a>
+            <a href="#tech">技术领域</a>
+            <a href="#about">关于我们</a>
+            <a href="#join">加入团队</a>
+            <a href="#">EN</a>
         </div>
+    </nav>
+
+    <!-- 主视觉区容器 -->
+    <div class="hero-container">
+        <!-- 主视觉区1 -->
+        <section class="hero active" style="background-image: url('https://picsum.photos/1920/1080?random=1');">
+            <div class="hero-content">
+                <h1 class="hero-title">用<span>学生创新</span>重新定义智能科技</h1>
+                <p class="hero-subtitle">
+                    来自校园的硬核研发团队，专注计算机视觉与机电一体化技术。<br>
+                    正在开发吸附式隧道检测机器人与兽装电子眼系统。
+                </p>
+                <a href="#products" class="cta-button">查看我们的项目</a>
+            </div>
+        </section>
+        <!-- 主视觉区2 -->
+        <section class="hero" style="background-image: url('https://picsum.photos/1920/1080?random=2');">
+            <div class="hero-content">
+                <h1 class="hero-title">创新驱动，引领科技未来</h1>
+                <p class="hero-subtitle">
+                    不断探索智能科技的边界，为行业带来新的突破。<br>
+                    携手共创美好明天。
+                </p>
+                <a href="#products" class="cta-button">了解更多</a>
+            </div>
+        </section>
     </div>
 
-    <div class="container-fluid mt-7">
-        <div class="row mb-6">
-            <section class="col-lg-6 mb-lg-0 mb-5">
-                <div class="tm-intro">
-                    <h3 class="tm-title-gray mb-4">What is HongMing Intelligent Technology?</h3>
-                    <hr class="mb-5 tm-hr">
-                    <p class="mb-5">Hongming Intelligent Technology Team is a young team focusing on robotics, artificial intelligence, computer science, mechanical engineering and other science and engineering disciplines, with unlimited creativity.</p>
-                    <p class="mb-5">Members from many universities and different majors of college students.</p>
-                    <img src="img/biz-oriented-1.jpg" alt="team photo" class="img-fluid tm-mb-3">
-                </div>
-            </section>
-            <section class="col-lg-6">
-                <h3 class="tm-title-gray mb-4">News</h3>
-                <hr class="mb-5 tm-hr">
-                <div class="tm-strategy-box mb-5">
-                    <img src="images/makerChina.jpg" alt="MakerChina" class="img-fluid tm-strategy-img">
-                    <div>
-                        <h4 class="tm-text-primary">"Maker China" Shanxi Small and Medium - sized Enterprise Innovation and Entrepreneurship Competition</h4>
-                        <p class="tm-strategy-text">In the competition, the team demonstrated the<b> "tunnel detection robot based on digital management platform",</b> which brought intelligent and automated detection technology to the engineering field for<b> the first time</b>, and applied <b>artificial intelligence technology</b> to improve the detection efficiency and reduce the detection cost, and <b>won the Shanxi Provincial Excellence Award</b>.</p>
-                    </div>
-                </div>
-                <div class="tm-strategy-box mb-5">
-                    <img src="images/Creating_youth.jpg" alt="Image" class="img-fluid tm-strategy-img">
-                    <div>
-                        <h4 class="tm-text-primary">Youth Innovation and Entrepreneurship Competition in Central Shanxi Youth Cities</h4>
-                        <p class="tm-strategy-text">The team participated in a large-scale competition for the first time, and the <b>"Adsorption tunnel inspection robot"</b> developed by our team made its debut, which accumulated experience for our future research and development.<b> Won the second prize of Shanxi Province</b>.</p>
-                    </div>
-                </div>
-                <div class="tm-strategy-box mb-5">
-                    <img src="images/Challenge_cup.jpg" alt="Image" class="img-fluid tm-strategy-img">
-                    <div>
-                        <h4 class="tm-text-primary">Challenge Cup</h4>
-                        <p class="tm-strategy-text">We won the championship in the department competition, so let's work together to qualify.</p>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <!-- Services -->
-        <div class="row mb-7">
-            <div class="col-lg-4 col-md-6">
-                <div class="tm-bg-gray tm-box">
-                    <div class="text-center mb-3">
-                        <i class="fas fa-cloud-sun fa-5x p-5"></i>
-                    </div>
-                    <h4 class="tm-text-primary tm-h3 mb-5">Suspendisse at nunc leo</h4>
-                    <p>Phasellus malesuada aliquam arcu, et ultricies metus scelerisque id. Curabitur finibus ornare blandit. Donec a luctus nulla. Vivamus ac felis sapien.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="tm-bg-gray tm-box">
-                    <div class="text-center mb-3">
-                        <i class="fas fa-spa fa-5x p-5"></i>
-                    </div>
-                    <h4 class="tm-text-primary tm-h3 mb-5">Etiam viverra elit vel efficitur</h4>
-                    <p>Nunc ultrices imperdiet orci, a ultrices orci luctus vel. Etiam consequat placerat convallis. Donec consequat consectetur est, eget pretium nisl.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <img src="img/biz-oriented-2.jpg" alt="Image" class="img-fluid">
-                <div class="tm-box tm-box-s">
-                    <p class="tm-mb-5">Suspendisse gravida, ipsum a gravida euismod, metus enim hendrerit ante, vel hendrerit sapien sem non nisl. Maecenas tempus risus ipsum.</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div id="parallax-2" class="parallax-window parallax-window-2" data-parallax="scroll"
-        data-image-src="img/biz-oriented-footer.jpg">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <div class="tm-overlay tm-bg-white">
-                        <h4 class="tm-text-primary mb-5">Parallax Background Section</h4>
-                        <p class="mb-5">Suspendisse gravida, ipsum a gravida euismod, metus enim hendrerit ante, vel hendrerit sapien sem non nisl. Maecenas tempus risus ipsum.</p>
-                        <a href="contact.html" class="btn btn-primary">Contact Us</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <section class="products" id="products">
+        <h2 class="section-title">我们的创新产品</h2>
+        <!-- 产品卡片将通过JS动态加载 -->
+        <div id="product-container"></div>
+    </section>
 
-    <footer class="container-fluid">
-        <div class="row">
-            <p class="col-lg-9 col-md-8 mb-5 mb-md-0">
-                Copyright &copy; 2025 <span class="tm-text-primary">HongMing Intelligent Technology</span>
-                - designed by <a rel="nofollow" target="_parent" href="https://github.com/HongyiHao-SXIT" class="tm-link-primary">HongyiHao</a>
-            </p>
-            <div class="col-lg-3 col-md-4 text-right">
-                <a rel="nofollow" target="_blank" href="https://fb.com/templatemo" class="tm-social-link">
-                    <i class="fab fa-facebook fa-2x tm-social-icon"></i>
-                </a>
-                <a href="https://twitter.com" class="tm-social-link">
-                    <i class="fab fa-twitter fa-2x tm-social-icon"></i>
-                </a>
-                <a href="https://linkedin.com" class="tm-social-link">
-                    <i class="fab fa-linkedin fa-2x tm-social-icon"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
+    <section class="tech" id="tech">
+        <h2 class="section-title">技术领域</h2>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/parallax.min.js"></script>
-    <script src="js/tooplate-script.js"></script>
+    </section>
+
     <script>
-        $(document).ready(function () {
-            $('#parallax-1').parallax({ imageSrc: 'img/biz-oriented-header.jpg' });
-            $('#parallax-2').parallax({ imageSrc: 'img/biz-oriented-footer.jpg' });
+        // 动态加载产品数据
+        const products = [
+            {
+                title: "吸附式隧道检测机器人",
+                desc: "基于YOLOv5的智能检测系统，可在复杂曲面自主行走",
+                features: ["98.7%识别准确率", "碳纤维轻量化结构", "IP67防护等级"],
+                color: "#1A6DFF"
+            },
+            {
+                title: "兽装电子眼系统",
+                desc: "开源可编程的智能交互眼睛解决方案",
+                features: ["30ms低延迟", "12种情感模式", "模块化设计"],
+                color: "#FF6D1A"
+            }
+        ];
+
+        // 产品卡片渲染函数
+        function renderProducts() {
+            const container = document.getElementById('product-container');
+            let html = '';
+
+            products.forEach(product => {
+                html += `
+                <div class="product-card" style="border-top: 5px solid ${product.color}">
+                    <h3>${product.title}</h3>
+                    <p>${product.desc}</p>
+                    <ul>
+                        ${product.features.map(f => `<li>${f}</li>`).join('')}
+                    </ul>
+                </div>
+                `;
+            });
+
+            container.innerHTML = html;
+        }
+
+        // 主视觉区切换函数
+        let currentIndex = 0;
+        const heroSections = document.querySelectorAll('.hero');
+
+        function switchHero() {
+            heroSections[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % heroSections.length;
+            heroSections[currentIndex].classList.add('active');
+        }
+
+        // 定时切换主视觉区
+        setInterval(switchHero, 5000);
+
+        // 页面加载完成后执行
+        document.addEventListener('DOMContentLoaded', () => {
+            renderProducts();
+
+            // 平滑滚动
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
         });
     </script>
 </body>
 
-</html>
+</html>    

@@ -1,0 +1,55 @@
+{
+    "nodes": [
+        {
+            "name": "Node 1",
+            "category": 0
+        },
+        {
+            "name": "Node 2",
+            "category": 1
+        },
+        {
+            "name": "Node 3",
+            "category": 2
+        },
+        {
+            "name": "Node 4",
+            "category": 0
+        }
+    ],
+    "categories": [
+        {
+            "name": "HTMLElement"
+        },
+        {
+            "name": "WebGL"
+        },
+        {
+            "name": "SVG"
+        },
+        {
+            "name": "CSS"
+        },
+        {
+            "name": "Other"
+        }
+    ],
+    "links": [
+        {
+            "source": 0,
+            "target": 1
+        },
+        {
+            "source": 1,
+            "target": 2
+        },
+        {
+            "source": 2,
+            "target": 3
+        },
+        {
+            "source": 3,
+            "target": 0
+        }
+    ]
+}

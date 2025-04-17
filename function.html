@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECharts关系图示例</title>
+    <!-- 引入echarts库 -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.2/dist/echarts.min.js"></script>
+    <!-- 引入jquery库 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- 为ECharts准备一个具有大小（宽高）的DOM -->
+    <div id="main" style="width: 800px;height:600px;"></div>
+    <script>
+        // 引入echarts库，这里使用全局引入的方式，等同于示例代码中的import * as echarts from 'echarts';
+        var ROOT_PATH = 'https://echarts.apache.org/examples';
+
+        var chartDom = document.getElementById('main');
+        var myChart = echarts.init(chartDom);
+        var option;
+
+        myChart.showLoading();
+        myChart.showLoading();
+        $.get('/test.json', function (webkitDep) {
+            myChart.hideLoading();
+            option = {
+                legend: {
+                    data: ['HTMLElement', 'WebGL', 'SVG', 'CSS', 'Other']
+                },
+                series: [
+                    {
+                        type: 'graph',
+                        layout: 'force',
+                        animation: false,
+                        label: {
+                            position: 'right',
+                            formatter: '{b}'
+                        },
+                        draggable: true,
+                        data: webkitDep.nodes.map(function (node, idx) {
+                            node.id = idx;
+                            return node;
+                        }),
+                        categories: webkitDep.categories,
+                        force: {
+                            edgeLength: 5,
+                            repulsion: 20,
+                            gravity: 0.2
+                        },
+                        edges: webkitDep.links
+                    }
+                ]
+            };
+            myChart.setOption(option);
+        });
+
+        option && myChart.setOption(option);
+    </script>
+</body>
+</html>

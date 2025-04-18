@@ -233,11 +233,14 @@
   margin-left: 10px;
 }
 
-#tech-container {
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
+
+.tech {
+  padding: 80px 10%;
+  background: #f9f9f9; 
+}
+
+.tech .product-card {
+  border: 1px solid #eaeaea;
 }
 
 #team-container {
@@ -254,7 +257,7 @@
   overflow: hidden;
 }
 
-/* 页脚样式 */
+
 .footer {
   background-color: var(--dark-bg);
   color: var(--text-light);
@@ -401,7 +404,8 @@
       display: none;
   }
 
-  .products {
+  .products,
+  .tech {
       padding: 60px 5%;
   }
 

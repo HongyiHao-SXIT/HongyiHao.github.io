@@ -233,6 +233,13 @@
   margin-left: 10px;
 }
 
+.product-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
 
 .tech {
   padding: 80px 10%;
@@ -242,6 +249,7 @@
 .tech .product-card {
   border: 1px solid #eaeaea;
 }
+
 
 #team-container {
   height: 100vh;

@@ -563,3 +563,133 @@ body {
     color: var(--accent-color);
     overflow-x: auto;
 }
+
+/* 团队组织结构图样式 */
+.team {
+    padding: 6rem 10%;
+    position: relative;
+}
+
+.team-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+.team-tree {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.team-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 0 1rem;
+}
+
+.team-node.root {
+    margin-bottom: 4rem;
+}
+
+.team-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    transition: var(--transition);
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px -10px rgba(2, 12, 27, 0.8);
+}
+
+.team-image {
+    height: 150px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.team-info {
+    padding: 1rem;
+}
+
+.team-info h3 {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.team-info p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.team-social {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.8rem;
+}
+
+.social-link {
+    color: var(--text-secondary);
+    transition: var(--transition);
+}
+
+.social-link:hover {
+    color: var(--accent-color);
+}
+
+.team-children {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.team-branch {
+    position: relative;
+}
+
+.team-branch::before {
+    content: '';
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    width: 2px;
+    height: 2rem;
+    background-color: rgba(100, 255, 218, 0.3);
+}
+
+.team-node:not(.root)::before {
+    content: '';
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    width: 2px;
+    height: 2rem;
+    background-color: rgba(100, 255, 218, 0.3);
+}
+
+.team-node:not(:only-child)::after {
+    content: '';
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: rgba(100, 255, 218, 0.3);
+}
+
+/* 缩小的表单样式 */
+.join-form-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+}

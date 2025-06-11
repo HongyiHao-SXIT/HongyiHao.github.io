@@ -1,89 +1,111 @@
-// 导航栏滚动效果
-const navbar = document.querySelector('.navbar');
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-});
+jQuery(document).ready(function($) {
 
-// 页面元素进入视口时的动画效果
-const animateOnScroll = () => {
-    const elements = document.querySelectorAll('.product-card, .section-title, .team-card');
-    
-    elements.forEach(element => {
-        const elementPosition = element.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
+    'use strict';
+
+
+        $(".Modern-Slider").slick({
+            autoplay:true,
+            speed:1000,
+            slidesToShow:1,
+            slidesToScroll:1,
+            pauseOnHover:false,
+            dots:true,
+            fade: true,
+            pauseOnDotsHover:true,
+            cssEase:'linear',
+            draggable:false,
+            prevArrow:'<button class="PrevArrow"></button>',
+            nextArrow:'<button class="NextArrow"></button>', 
+          });
+
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+
+
+        $('.tabgroup > div').hide();
+            $('.tabgroup > div:first-of-type').show();
+            $('.tabs a').click(function(e){
+              e.preventDefault();
+                var $this = $(this),
+                tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
+                others = $this.closest('li').siblings().children('a'),
+                target = $this.attr('href');
+            others.removeClass('active');
+            $this.addClass('active');
+            $(tabgroup).children('div').hide();
+            $(target).show();
+          
+        })
+
+
+
+        $(".box-video").click(function(){
+          $('iframe',this)[0].src += "&amp;autoplay=1";
+          $(this).addClass('open');
+        });
+
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:30,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:2,
+                    nav:false
+                },
+                1000:{
+                    items:3,
+                    nav:true,
+                    loop:false
+                }
+            }
+        })
+
+
+
+        var contentSection = $('.content-section, .main-banner');
+        var navigation = $('nav');
+        navigation.on('click', 'a', function(event){
+            event.preventDefault();
+            smoothScroll($(this.hash));
+        });
         
-        if (elementPosition < windowHeight - 100) {
-            element.classList.add('animate-fade-in');
+        $(window).on('scroll', function(){
+            updateNavigation();
+        })
+        updateNavigation();
+        
+        function updateNavigation(){
+            contentSection.each(function(){
+                var sectionName = $(this).attr('id');
+                var navigationMatch = $('nav a[href="#' + sectionName + '"]');
+                if( ($(this).offset().top - $(window).height()/2 < $(window).scrollTop()) &&
+                      ($(this).offset().top + $(this).height() - $(window).height()/2 > $(window).scrollTop()))
+                    {
+                        navigationMatch.addClass('active-section');
+                    }
+                else {
+                    navigationMatch.removeClass('active-section');
+                }
+            });
         }
-    });
-};
+        function smoothScroll(target){
+            $('body,html').animate({
+                scrollTop: target.offset().top
+            }, 800);
+        }
 
-// 初始化动画
-window.addEventListener('scroll', animateOnScroll);
-window.addEventListener('load', animateOnScroll);
 
-// 添加动画样式
-const style = document.createElement('style');
-style.textContent = `
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(30px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-    
-    .animate-fade-in {
-        animation: fadeIn 0.8s ease forwards;
-    }
-    
-    .product-card, .section-title, .team-card {
-        opacity: 0;
-    }
-`;
-document.head.appendChild(style);
+        $('.button a[href*=#]').on('click', function(e) {
+          e.preventDefault();
+          $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top -0 }, 500, 'linear');
+        });
 
-// 表单提交处理
-const form = document.getElementById('join-form');
-if (form) {
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        // 这里可以添加表单验证和提交逻辑
-        alert('感谢您的申请！我们将尽快与您联系。');
-        form.reset();
-    });
-}
 
-// 创建高科技背景元素
-const createTechElements = () => {
-    const container = document.querySelector('body');
-    const count = 15;
-    
-    for (let i = 0; i < count; i++) {
-        const element = document.createElement('div');
-        element.classList.add('tech-element');
-        
-        // 随机位置和大小
-        const size = Math.random() * 100 + 50;
-        const x = Math.random() * 100;
-        const y = Math.random() * 100;
-        
-        element.style.width = `${size}px`;
-        element.style.height = `${size}px`;
-        element.style.left = `${x}vw`;
-        element.style.top = `${y}vh`;
-        
-        // 随机动画
-        const duration = Math.random() * 30 + 20;
-        const delay = Math.random() * 10;
-        
-        element.style.animation = `float ${duration}s ease-in-out ${delay}s infinite`;
-        
-        container.appendChild(element);
-    }
-};
-
-// 页面加载完成后创建背景元素
-window.addEventListener('load', createTechElements);
+});

@@ -1,379 +1,771 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Lanyi_adict and his friend</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/stylesheet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>HongMing Tech | Furry College Students' Hardcore Innovation Team</title>
-</head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/light-box.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
 
-<body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="img/HongMing_Logo.jpg" alt="HongMing Tech logo">
-            <div class="logo-text">HongMing Tech</div>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    </head>
+
+    <body>
+
+
+
+        <header class="nav-down responsive-nav hidden-lg hidden-md">
+            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div id="main-nav" class="collapse navbar-collapse">
+                <nav>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#details">Introduciton</a></li>
+                        <li><a href="#Skill-tree">Skills Tree</a></li>
+                        <li><a href="#Recommendations">Recommendations</a></li>
+                        <li><a href="#contact">Contect Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="sidebar-navigation hidde-sm hidden-xs">
+            <div class="logo">
+                <a href="#">Lanyi<em>and his friends</em></a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#top">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#details">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Introduction
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Skill-tree">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Skills Tree
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Recommendations">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Recommendations
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="social-icons">
+                <li><a href="https://x.com/Lanyi_adict1145"><i class="fa fa-twitter"></i></a></li>
+            </ul>
         </div>
-        <div class="nav-links">
-            <a href="#products">Products</a>
-            <a href="#tech">Technologies</a>
-            <a href="#team">Team</a>
-            <a href="#join">Join Us</a>
-            <a href="index_CN.html">中文</a>
-        </div>
-    </nav>
 
-    <div class="hero-container">
-        <section class="hero active" style="background-image: url('img/Challenge_cup_project.jpg');">
-            <div class="hero-content">
-                <h1 class="hero-title">Redefine Intelligent Technology with <span>Student Innovation</span></h1>
-                <p class="hero-subtitle">
-                    A campus-based R&D team specializing in computer vision and mechatronics technology.<br>
-                    Our adsorption tunnel inspection robot has reached the leading level.
-                </p>
-                <a href="#products" class="cta-button">Explore Our Projects</a>
-            </div>
-        </section>
-        <section class="hero" style="background-image: url('https://picsum.photos/1920/1080?random=2');">
-            <div class="hero-content">
-                <h1 class="hero-title">Driven by Innovation, Leading the Future of Technology</h1>
-                <p class="hero-subtitle">
-                    Continuously exploring the boundaries of intelligent technology to bring new breakthroughs to the industry.<br>
-                    Let's create a better tomorrow together.
-                </p>
-                <a href="#products" class="cta-button">Learn More</a>
-            </div>
-        </section>
-    </div>
-
-    <section class="products" id="products">
-        <h2 class="section-title">Innovative Products</h2>
-        <div id="product-container">
-            <div class="product-card">
-                <div class="product-image" style="background-image: url('img/YOLO_robotics.jpg');"></div>
-                <div class="product-content">
-                    <h3>Adsorption Tunnel Inspection Robot + Intelligent Radar Defect Prediction Platform</h3>
-                    <p>Intelligent detection system based on YOLOv8, designed for complex curved surface environments</p>
-                    <ul>
-                        <li>YOLOv8+CBAM deep learning algorithm, significantly improving detection accuracy</li>
-                        <li>Negative pressure adsorption system, adaptable to curved surfaces with curvature radius ≥2m</li>
-                        <li>Carbon fiber lightweight structure, total weight <8kg</li>
-                        <li>IP67 protection rating, suitable for harsh environments</li>
-                        <li>Air-coupled radar real-time detection, reaching international leading level</li>
-                    </ul>
-                    <div class="product-links">
-                        <a href="data/基于Yolo模型的混凝土检测机器人.pdf" class="product-link">Technical Document</a>
-                        <a href="data/基于Yolo模型的混凝土检测机器人.pptx" class="product-link">Presentation</a>
+        <div class="slider">
+            <div class="Modern-Slider content-section" id="top">
+                <div class="item item-1">
+                    <div class="img-fill">
+                    <div class="image"></div>
+                    <div class="info">
+                        <div>
+                          <h1>Xbear's funny<br>C++ algorithm courses</h1>
+                          <p>Xbear is a university student who is major in AI.<br>
+                          	At the same time he is good at algorithm, there are some useful tutorials.</p>
+                          <div class="white-button button">
+                              <a href="#details">Discover More</a>
+                          </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image" style="background-image: url('');"></div>
-                <div class="product-content">
-                    <h3>Fursuit Electronic Eye System</h3>
-                    <p>Open-source programmable intelligent interactive eye solution</p>
-                    <ul>
-                        <li>OpenCV & YOLO V11</li>
-                        <li>Modular design, supporting Arduino/Raspberry Pi</li>
-                        <li>Bluetooth 5.0 wireless control, response distance >10m</li>
-                        <li>Open-source SDK, supporting secondary development</li>
-                    </ul>
-                    <div class="product-links">
-                        <a href="https://github.com/HongyiHao-SXIT/Eyetrack_OpenCV" class="product-link">GitHub Repository</a>
-                        <a href="#eye_track" class="product-link">Custom Solutions</a>
+                <div class="item item-2">
+                    <div class="img-fill">
+                        <div class="image"></div>
+                        <div class="info">
+                        <div>
+                          <h1>Lanyi's <br>20th Birthday</h1>
+                          <p>On July 11th this year, Lanyi ushered in his 20th birthday. 
+							<br>Hoping to live better and better whith his friends.</p>
+                          
+                          <div class="white-button button">
+                              <a href="#details">Share More</a>
+                          </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');"></div>
-                <div class="product-content">
-                    <h3>Intelligent Robotic Claw</h3>
-                    <p>High-precision adaptive grasping solution</p>
-                    <ul>
-                        <li>6-DOF robotic arm, repeat positioning accuracy ±0.1mm</li>
-                        <li>Force feedback control system, adjustable grasping force from 0.1 - 5N</li>
-                        <li>Supports ROS and Python API control</li>
-                        <li>Modular design, quick replacement of end-effectors</li>
-                        <li>Open-source control algorithms, supporting custom grasping strategies</li>
-                    </ul>
-                    <div class="product-links">
-                        <a href="#" class="product-link">Technical Whitepaper</a>
-                        <a href="#" class="product-link">Application Cases</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');"></div>
-                <div class="product-content">
-                    <h3>Intelligent Robotic Claw</h3>
-                    <p>High-precision adaptive grasping solution</p>
-                    <ul>
-                        <li>6-DOF robotic arm, repeat positioning accuracy ±0.1mm</li>
-                        <li>Force feedback control system, adjustable grasping force from 0.1 - 5N</li>
-                        <li>Supports ROS and Python API control</li>
-                        <li>Modular design, quick replacement of end-effectors</li>
-                        <li>Open-source control algorithms, supporting custom grasping strategies</li>
-                    </ul>
-                    <div class="product-links">
-                        <a href="#" class="product-link">Technical Whitepaper</a>
-                        <a href="#" class="product-link">Application Cases</a>
+                <div class="item item-3">
+                    <div class="img-fill">
+                        <div class="image"></div>
+                        <div class="info">
+                        <div>
+                          <h1>Cybersecurity<br>Lanyi is a big fan of hacker.</h1>
+                          <p>Lnayi wants to be a Cybersecurity PhD in the future, <br>so he takes part in many relevant courses at many famous universities and labouratories. </p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+                          <div class="white-button button">
+                              <a href="#details">Learn More</a>
+                          </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <section class="tech" id="tech">
-        <h2 class="section-title">Technology Solutions</h2>
-        <div class="tech-container">
-            <section id="yolo_robot">
-                <div class="product-card">
-                    <div class="product-image" style="background-image: url('img/YOLO_robotics.jpg');"></div>
-                    <div class="product-content">
-                        <h3>Computer Vision Technology Solution</h3>
-                        <p>Deep learning-based computer vision solution providing efficient and accurate image recognition and analysis</p>
-                        <ul>
-                            <li>Uses advanced convolutional neural network (CNN) architectures</li>
-                            <li>Supports various image recognition tasks such as object detection and image classification</li>
-                            <li>Real-time processing capability to meet industrial application requirements</li>
-                        </ul>
-                        <div class="product-links">
-                            <a href="#" class="product-link">Technical Document</a>
-                            <a href="#" class="product-link">Demo Video</a>
+
+        <div class="page-content">
+            <section id="details" class="content-section">
+                <div class="section-heading">
+                    <h1>Introduction<br><em>Myself</em></h1>
+                    <p>Different Furry have different skills, We pay attention to
+                    <br><b>Computr Science, AI, Cybersecurity, Algorithm, MEMS, MCU, System, Robotics, IELTS, Graduate Record Exam </b>etc.</p>
+                </div>
+                <div class="section-content">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="image">
+                                <img src="img\Lanyi.jpg" alt="">
+                                <div class="details-button button">
+                                    <a href="#Skill-tree">Learn more</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Lanyi_adict</h4>
+                                <span>Computer Science</span>
+                                <p>A furry majoring in computer science. A blue fox or a Protogen spends a lot of time on code every day. Want to apply for a master's degree in cybersecurity or robotics in the United States</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/YiQing&Lanyi.png" alt="">
+                                <div class="details-button button">
+                                    <a href="#Skill-tree">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>YiQing</h4>
+                                <span>Lanyi's couple</span>
+                                <p>YiQing is LanYi's favorite people ~ a green wolf who is also good at computer science. He has super learning ability, is a bit shy, and is a very handsome little brother. He loves to <strong>eat pig's trotter rice and rice rolls </strong>(PS: LanYi guessed it )</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/Xbear.jpg" alt="">
+                                <div class="details-button button">
+                                    <a href="#Skill-tree">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Xbear</h4>
+                                <span>Artificual Intelligence</span>
+                                <p>Xbear is a feifei furry, who is trying to adapt to life in the human world. I will try my best to bring you happiness. Thanks for the support!
+                                    The avatar was drawn by a friend <b>(ID:有病治啊 )</b>
+                                    Majoring in AI, determined to produce high-quality content, with both technical and theoretical orientations
+                                    Board drawing + L2D learning, the video quality will be improved hard.
+                                    <br><b>QQ account: 1480049710</b><br>
+                                    Currently I have activated<b> iDiandai, my ID is "不食烟火小北北"</b></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/BearLeLe.jpg" alt="">
+                                <div class="details-button button">
+                                    <a href="#Skill-tree">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Horny bear</h4>
+                                <span>Microelectronics</span>
+                                <p>A brown bear, a senior student studying microelectronics science and engineering, is currently taking the postgraduate entrance examination, and hopes to study MEMS.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/Joyang&xKwin.png" alt="">
+                                <div class="details-button button">
+                                    <a href="#Skill-tree">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Joyang & xKwin</h4>
+                                <span>Mechanical Engineering</span>
+                                <p><b>Chay_Joyang</b>is a purple fox. He knows a lot about mechanical engineering. He has a strong learning ability and super hands-on ability. He wants to be outstanding. He is a sensitive little boy and can eat a lot /dogo, <b>QQ account: 217416296</b>
+
+                                    <br><b>xKwin </b>is a handsome dog, innocent, cute, pure and sensitive little dog, <b>QQ account: 2591963089</b></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/xuanyun.png" alt="">
+                                <div class="details-button button">
+                                    <a href="#Sklii-tree">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Xuanyun</h4>
+                                <span>Computer Science</span>
+                                <p>Xuanyun is a blue and white furry wolf who is major in Computer Science at university. Xuanyun is interested in<b> technology</b> and <b> related to programming and digital media</b>.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/Foxi.png" alt="">
+                                <div class="details-button button">
+                                    <a href="#Sklii-tree">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Foxi</h4>
+                                <span>Applied Statistics</span>
+                                <p>This is Foxi! I am a good friend of LanYi! I am a college student at Anhui University, studying applied statistics. I like playing<b> maimai</b> and <b>cute things!</b> I am currently working hard to build a strong body and enrich my experience!
+                                    <b>QQ Account: 2959425423</b></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/Ayres Macruby.png" alt="">
+                                <div class="details-button button">
+                                    <a href="#Skill-tree">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Ayres Macrudy</h4>
+                                <span>PhD</span>
+                                <p>Danone soda cake chief puncher<br>Work coordinator for the <b>2024 Nobel Prize in Physics</b></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/Luo_Alen.png" alt="">
+                                <div class="details-button button">
+                                    <a href="#Skill-tree">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>ZiLuo_Alen</h4>
+                                <span>CSP</span>
+                                <p>Ziluo is a cute yellow and white kitten who is very good at<b> Python</b> and<b> C++</b> and is preparing to participate in the CSP.<br>He is also a video producer focusing on medium and long videos. He posted his own videos on Bilibili and gained some fans. With <b>"keep improving" </b>as his motto. He does his best to learn about the weather at school or after school.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <section id="Skill-tree" class="content-section">
+                <div class="section-heading">
+                    <h1>Skills Tree <br><em>and relative network</em></h1>
+                    <p>Different Furry have different skills
+                    <br>The reason why we meet with each other is <b>the love of technology</b></p>
+                </div>
+                <div id="container" style="height: 70vh"></div>
+                <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+                <script type="text/javascript">
+                  var dom = document.getElementById('container');
+                  var myChart = echarts.init(dom, null, {
+                    renderer: 'canvas',
+                    useDirtyRect: false
+                  });
+                  var app = {};
+                  
+                  var option;
+              
+                  option = {
+                tooltip: {
+                  show: true,
+                  formatter: function (params) {
+                    if (params.data) {
+                    return `<b>Major: ${params.data.Major}</b><br>  Skills: ${params.data.skills}`;
+                    }
 
-            <div class="product-cards-container">
-                <div class="product-card">
-                    <div class="product-image" style="background-image: url('https://via.placeholder.com/300x250');"></div>
-                    <div class="product-content">
-                        <h3>Fursuit Electronic Eye System Air</h3>
-                        <p>Integrates fursuit and electronic technology to achieve efficient automation control and output systems</p>
-                        <ul>
-                            <li>Optimized mechanical structure design to improve system stability and reliability</li>
-                            <li>Uses advanced sensors and controllers for precise motion control</li>
-                            <li>Supports multiple communication protocols for easy integration with other systems</li>
-                        </ul>
-                        <div class="product-links">
-                            <a href="#" class="product-link">Technical Whitepaper</a>
-                            <a href="#" class="product-link">Application Cases</a>
+                  }
+                },
+                animationDurationUpdate: 1500,
+                animationEasingUpdate: 'quinticInOut',
+                series: [
+                  {
+                    type: 'graph',
+                    layout: 'none',
+                    symbolSize: 70,
+                    roam: true,
+                    label: {
+                      show: true 
+                    },
+                    edgeSymbol: ['circle', 'arrow'],
+                    edgeSymbolSize: [4, 10],
+                    data: [
+                      { name: 'Lanyi_adict', 
+                      x: 300, 
+                      y: 300,
+                      skills:'C/C++, Java, Python, JavaScript, Web, Linux, SQL, Node.Js ',
+		      Major:'Computer Science',
+                  },
+                      { name: 'YiQing', 
+                      x: 360, 
+                      y: 300,
+                      skills:'Java, C/C++, Python, Node.Js, Kali Linux',
+		      Majot:'Computer science(Currently)',
+                  },
+                      { 
+                      name: 'Xbear',
+                      x: 240, 
+                      y: 290, 
+                       skills: 'cpp, Java, R, rust, MATLAB, Ubuntu',
+			        Major:'Artificial Intelligent',
+                      },
+                      { name: 'Xuanyun',
+                      x: 250,
+                      y: 247,
+                        skills:'C/C++, Java, Python, JavaScript, Web, Linux, SQL, Node.Js, UE', 
+		            Major: 'Computer Science',
+                      },
+                      { name: 'Foxi',
+                      x: 345, 
+                      y: 340,
+                      skills:'Java, maimai DX', 
+		            Major:'Applied Statistics',
+                      },
+                      { name: 'Bear_LeLe',
+                      x: 350, 
+                      y: 250,
+                        skills:'Cadence virtuoso, Tanners, Ansys workbech, Solidwork',
+		                Major: 'Micro-electronics',
+		      },
+                      { name: 'Joyang&xKwin',
+                      
+                      x: 246, 
+                      y: 330, 
+                      skills:'Auto CAD, PhotoShop, UG, CNC, C/C++, MCU, Solidwork',
+		                Major:'Machanical Engineering',
+		      },
+                      { name: 'Ayres Macrudy',
+                      x: 300, 
+                      y: 240,
+                        skills:'C/C++, Pyhton',
+		               Major:'Artificial Intelligent PhD',
+		      },
+                      { name: 'ZiLuo_ALen',
+                      x: 290, 
+                      y: 350,
+                      skills:'C/C++, Python, Photography', }
+                    ],
+                    links: [
+                      {
+                        source: 'Lanyi_adict',
+                        target: 'YiQing',
+                        label: {
+                          show: true,
+                          formatter: '❤Couple❤' 
+                        },
+                        lineStyle: { curveness: 0.2 }
+                      },
+                      {
+                        source: 'Lanyi_adict',
+                        target: 'Xbear',
+                        label: {
+                          show: true,
+                          formatter: 'Friend' 
+                        },
+                        lineStyle: { curveness: 0.2 }
+                      },
+                      {
+                        source: 'Lanyi_adict',
+                        target: 'Xuanyun',
+                        label: {
+                          show: true,
+                          formatter: 'Classmate' 
+                        },
+                        lineStyle: { curveness: 0.2 }
+                      },
+                      {
+                        source: 'Lanyi_adict',
+                        target: 'Foxi',
+                        label: {
+                          show: true,
+                          formatter: 'Friend' 
+                        },
+                        lineStyle: { curveness: 0.2 }
+                      },
+                      {
+                        source: 'Lanyi_adict',
+                        target: 'Bear_LeLe',
+                        label: {
+                          show: true,
+                          formatter: 'Friend' 
+                        },
+                        lineStyle: { curveness: 0.2 }
+                      },
+                      {
+                        source: 'Lanyi_adict',
+                        target: 'Ayres Macrudy',
+                        label: {
+                          show: true,
+                          formatter: 'Friend' 
+                        },
+                        lineStyle: { curveness: 0.2 }
+                      },
+                      {
+                        source: 'Lanyi_adict',
+                        target: 'ZiLuo_ALen',
+                        label: {
+                          show: true,
+                          formatter: 'Friend' 
+                        },
+                        lineStyle: { curveness: 0.2 }
+                      },
+                      {
+                        source: 'Lanyi_adict',
+                        target: 'Joyang&xKwin',
+                        label: {
+                          show: true,
+                          formatter: 'Classmate&Friend' 
+                        },
+                        lineStyle: { curveness: 0.2 }
+                },
+                      
+                    ],
+                    lineStyle: {
+                      opacity: 0.9,
+                      width: 2,
+                      curveness: 0
+                    }
+                  }
+                ]
+              };
+              
+                  if (option && typeof option === 'object') {
+                    myChart.setOption(option);
+                  }
+              
+                  window.addEventListener('resize', myChart.resize);
+                </script>
+            </section>
+            <section id="Recommendations" class="content-section">
+                <div class="section-heading">
+                    <h1>Learning resources<br><em>Recommendations</em></h1>
+                    <p>Some learning materials about computer science compiled by Lanyi. 
+                    <br>Contains open courses from top universities, learning websites and materials compiled by others.</p>
+                </div>
+                <div class="section-content">
+                    <div class="tabs-content">
+                        <div class="wrapper">
+                            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                              <li><a href="#tab1" class="active">Code</a></li>
+                              <li><a href="#tab2">Skills</a></li>
+                              <li><a href="#tab3">Learning source Page</a></li>
+                              <li><a href="#tab4">Bilibili</a></li>
+                            </ul>
+                            <section id="first-tab-group" class="tabgroup">
+                                <div id="tab1">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/CS50_Logo.png" alt="">
+                                                <div class="text-content">
+                                                    <h4>CS50X</h4>
+                                                    <span>Harvard University</span>
+                                                    <p>This course has been voted the most popular public course by Harvard students for many years. Professor Malan is very passionate in class. I still remember the scene where he tears up the Yellow pages to explain the dichotomy method. Since this is a university-wide public course, the contents are pretty friendly to beginners and even if you already have some programming experience, all the programming assignments are quite exciting and worth a try.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="https://cs50.harvard.edu/x/2024/">Learn More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/UCB_Logo.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>CS61A</h4>
+                                                    <span>University of California, Berkeley</span>
+                                                    <p>This is not just a programming language class, but goes deeper into the principles of program construction and operation. Finally you will implement an interpreter for Scheme in Python in Project 4. In addition, abstraction will be a major theme in this class, as you will learn about functional programming, data abstraction, object orientation, etc. to make your code more readable and modular. Of course, learning a programming language is also a big part of this course. You will master three programming languages, Python, Scheme, and SQL, and in learning and comparing them, you will be equiped with the ability to quickly master a new programming language.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="https://cs61a.org/">Learn More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/MIT_Logo.png" alt="">
+                                                <div class="text-content">
+                                                    <h4>MIT6.092</h4>
+                                                    <span>Massachusetts Institute of Technology</span>
+                                                    <p>MIT's Java introductory course is suitable for beginners with no programming background. Each session consists of one hour of lecture (knowledge explanation) and one hour of lab (code practice), with a total of seven sessions. Although it's a fourteen-hour course, the learning process is fast, and you can complete it in about a day. It feels quite manageable for beginners.</p>
+                                                    <div class="accent-button button">
+                                                        <a href="https://ocw.mit.edu/courses/6-092-introduction-to-programming-in-java-january-iap-2010/">Learn More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="tab2">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/MIT_Logo.png" alt="">
+                                                <div class="text-content">
+                                                    <h4>Software Construction</h4>
+                                                    <span>Massachusetts Institute of Technology</span>
+                                                    <p>The goal of this course is for you to learn how to write high quality code, and what is meant by high quality is to meet the following three targets:<br><b>1.Safe from bugs. Correctness (correct behavior right now) and defensiveness (correct behavior in the future) are required in any software we build.</b><br><b>2.Easy to understand. The code has to communicate to future programmers who need to understand it and make changes in it (fixing bugs or adding new features). That future programmer might be you, months or years from now. You’ll be surprised how much you forget if you don’t write it down, and how much it helps your own future self to have a good design.</b><br><b>3.Ready for change. Software always changes. Some designs make it easy to make changes; others require throwing away and rewriting a lot of code.</b></p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="https://web.mit.edu/6.031/www/sp23/">Learn More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/MIT_Logo.png" alt="">
+                                                <div class="text-content">
+                                                    <h4>MIT6.006</h4>
+                                                    <span>Massachusetts Institute of Technology</span>
+                                                    <p>Probably the most precious course from the EECS department of MIT. Taught by Erik Demaine, one of the geniuses in Algorithms.Compared with CS106B/X (Data structures and algorithms using C++), 6.006 emphasizes the algorithms more. It also covers several classical data structures such as AVL trees. You may use it to learn more about algorithms after CS106B/X.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/">Learn More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/CMU_Logo.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>CMU 15-445: Database Systems</h4>
+                                                    <span>Carnegie Mellon University</span>
+                                                    <p>As an introductory course to databases at CMU, this course is taught by Andy Pavlo, a leading figure in the database field (quoted as saying, "There are only two things I care about in this world, one is my wife, the second is the database").<br>This is a high-quality, resource-rich introductory course to Databases.<br>The faculty and the CMU Database Group behind the course have open-sourced all the corresponding infrastructure (Autograder, Discord) and course materials (Lectures, Notes, Homework), enabling any student who is willing to learn about databases to enjoy an experience almost equivalent to that of a CMU student.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="https://15445.courses.cs.cmu.edu/spring2023/schedule.html">Learn More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="tab3">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/csdiy.png" alt="">
+                                                <div class="text-content">
+                                                    <h4>csdiy</h4>
+                                                    <span>csdiy & Github</span>
+                                                    <p>This is a self-study guide to computer science and a commemoration of the website author's three years of self-study.<br>This is also a gift to the young students of Peking University. If this book can bring even the slightest help to your college life, it will be a great encouragement and comfort to me.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="https://csdiy.wiki">Learn More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/Xbear_web.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Self-cultivation of AI people</h4>
+                                                    <span>Xbear</span>
+                                                    <p>This is a learning materials website in the AI field created by Xbear. Here you can learn<b> how an ordinary student can step by step become a tech guru.</b> In the future, Lanyi will also be involved in the content on the website.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="https://xbearhs-organization.gitbook.io/ai-ren-de-zi-wo-xiu-lian">Learn More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/CTF_Logo.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>CTF.wiki</h4>
+                                                    <span>CTF</span>
+                                                    <p>I don't know if you chose computer science back in the day with a teenage hacker dream in mind, but the reality is that the path to becoming a hacker is long and arduous.<br>After mastering these theoretical knowledge, it is necessary to cultivate and exercise these "hacker qualities" in practice. Capture The Flag (CTF) competitions are a popular system security competition that comprehensively tests your understanding and application of knowledge in various computer fields through the challenges presented in the competition.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="https://ctf-wiki.org/">Learn More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="tab4">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/Lanyi_web.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Lanyi_adict</h4>
+                                                    <span>Bilibili</span>
+                                                    <p>This is Lanyi_adict's bilibili account, where she will share some Furry daily life and video clips (maybe, she may upload some study life Vlogs in the future</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="https://space.bilibili.com/291940264">Learn More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>                                
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/Xbear_web.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Xbear</h4>
+                                                    <span>Bilibili</span>
+                                                    <p>This is Xbear's Bilibili account, where you can find Xbear's C++ algorithm courses and videos on Fursuit. Hope you enjoy and support him.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="https://space.bilibili.com/511413808">Learn More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/TairanHe.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Tairan He</h4>
+                                                    <span>WhynotTV</span>
+                                                    <p>TaiRan He is a Ph.D. student at the Robotics Institute of Carnegie Mellon University. He completed his undergraduate studies at Shanghai Jiao Tong University's IEEE Pilot Class. He is dedicated to sharing his daily learning experiences with the audience, hoping that his Vlog can help you.<br> This is Tairan He's personal website, you can get some details about him<b><a href="https://tairanhe.com/">TiaranHe.com</a></b></p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="https://space.bilibili.com/14145636/dynamic">Learn More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section> 
                         </div>
                     </div>
                 </div>
-
-                <div class="product-card">
-                    <div class="product-image" style="background-image: url('https://via.placeholder.com/300x250');"></div>
-                    <div class="product-content">
-                        <h3>Fursuit Electronic Eye System Pro</h3>
-                        <p>Integrates mechanical and electronic technology to achieve efficient automation control and motion systems</p>
-                        <ul>
-                            <li>Optimized mechanical structure design to improve system stability and reliability</li>
-                            <li>Uses advanced sensors and controllers for precise motion control</li>
-                            <li>Supports multiple communication protocols for easy integration with other systems</li>
-                        </ul>
-                        <div class="product-links">
-                            <a href="#" class="product-link">Technical Whitepaper</a>
-                            <a href="#" class="product-link">Application Cases</a>
-                        </div>
+            </section>
+            <section id="contact" class="content-section">
+                <div id="contact-content">
+                    <div class="section-heading">
+                        <h1>Contact<br><em>Lanyi_adict</em></h1>
+                        <p>Drop me a line and Let me get your minds
+                        <br><strong>QQ Account, Emails, Twitter, Github</strong></p>
+                        
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="team" id="team">
-        <h2 class="section-title">Team Members</h2>
-        <div class="team-container">
-            <div class="team-tree">
-                <div class="team-node root">
-                    <div class="team-card">
-                        <div class="team-image" style="background-image: url('img/Lanyi_adict.jpg');"></div>
-                        <div class="team-info">
-                            <h3>Lanyi_adict</h3>
-                            <p>Team Leader</p>
-                            <div class="team-social">
-                                <a href="https://github.com/HongyiHao-SXIT" class="social-link"><i class="fab fa-github"></i></a>
-                                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <div class="section-content">
+                        <form id="contact" action="#" method="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <fieldset>
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-4">
+                                  <fieldset>
+                                    <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required="">
+                                  </fieldset>
+                                </div>
+                                 <div class="col-md-4">
+                                  <fieldset>
+                                    <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..." required="">
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <button type="submit" id="form-submit" class="btn">Send Message Now</button>
+                                  </fieldset>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="team-children">
-                        <div class="team-branch">
-                            <div class="team-node">
-                                <div class="team-card">
-                                    <div class="team-image" style="background-image: url('img/Joyang.jpg');"></div>
-                                    <div class="team-info">
-                                        <h3>Yang Zhou</h3>
-                                        <p>Mechanical Engineer</p>
-                                        <div class="team-social">
-                                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="team-children">
-                                    <div class="team-node">
-                                        <div class="team-card">
-                                            <div class="team-image" style="background-image: url('img/cv_engineer.jpg');"></div>
-                                            <div class="team-info">
-                                                <h3>Qiang Wang</h3>
-                                                <p>Computer Vision Engineer</p>
-                                                <div class="team-social">
-                                                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                                                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-node">
-                                        <div class="team-card">
-                                            <div class="team-image" style="background-image: url('img/robot_engineer.jpg');"></div>
-                                            <div class="team-info">
-                                                <h3>Chen Chen</h3>
-                                                <p>Robotics Engineer</p>
-                                                <div class="team-social">
-                                                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                                                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-branch">
-                            <div class="team-node">
-                                <div class="team-card">
-                                    <div class="team-image" style="background-image: url('img/product_manager.jpg');"></div>
-                                    <div class="team-info">
-                                        <h3>Xue Zhao</h3>
-                                        <p>Product Manager</p>
-                                        <div class="team-social">
-                                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="team-children">
-                                    <div class="team-node">
-                                        <div class="team-card">
-                                            <div class="team-image" style="background-image: url('img/ui_designer.jpg');"></div>
-                                            <div class="team-info">
-                                                <h3>Xiao Lin</h3>
-                                                <p>UI/UX Designer</p>
-                                                <div class="team-social">
-                                                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                                                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-node">
-                                        <div class="team-card">
-                                            <div class="team-image" style="background-image: url('img/marketing.jpg');"></div>
-                                            <div class="team-info">
-                                                <h3>Xiaoming Huang</h3>
-                                                <p>Marketing Specialist</p>
-                                                <div class="team-social">
-                                                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                                                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
+            <section>
+                
+            </section>
 
-    <section class="join" id="join">
-        <h2 class="section-title">Join Our Team</h2>
-        <div class="join-container">
-            <div class="join-form-wrapper">
-                <form id="join-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone</label>
-                        <input type="tel" id="phone">
-                    </div>
-                    <div class="form-group">
-                        <label for="position">Position Applied For</label>
-                        <select id="position" required>
-                            <option value="">Select</option>
-                            <option value="cv">Computer Vision Engineer</option>
-                            <option value="robotics">Robotics Engineer</option>
-                            <option value="software">Software Engineer</option>
-                            <option value="design">UI/UX Designer</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Personal Introduction</label>
-                        <textarea id="message" rows="4" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="resume">Upload Resume</label>
-                        <input type="file" id="resume" accept=".pdf,.doc,.docx">
-                    </div>
-                    <button type="submit" class="cta-button">Submit Application</button>
-                </form>
-            </div>
+            <section class="footer">
+                <p>Lanyi_adict &copy; 2024 Shanxi Institute of Technology
+                
+                . Department of Big Data and Intelligent Engineering</p>
+            </section>
         </div>
-    </section>
 
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-col">
-                <h3>About Us</h3>
-                <p>HongMing Tech is a hardcore innovation team composed of furry college students, specializing in the research and application of computer and robotics technologies.</p>
-            </div>
-            <div class="footer-col">
-                <h3>Contact Us</h3>
-                <ul>
-                    <li><a href="mailto:contact@hongming-tech.com">contact@hongming-tech.com</a></li>
-                    <li><a href="tel:+8612345678901">+86 150 3441 4555</a></li>
-                    <li>Beijing, China</li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3>Follow Us</h3>
-                <div class="social-icons">
-                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-weibo"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-wechat"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div>© 2025 HongMing Tech. All rights reserved.</div>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Cookie Policy</a>
-            </div>
-        </div>
-    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-    <script src="js/hero_slid.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    
+    <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-</body>
 
+    <script>
+        // Hide Header on on scroll down
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
+
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
+
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            if(Math.abs(lastScrollTop - st) <= delta)
+                return;
+            if (st > lastScrollTop && st > navbarHeight){
+                // Scroll Down
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if(st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+            
+            lastScrollTop = st;
+        }
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+</body>
 </html>

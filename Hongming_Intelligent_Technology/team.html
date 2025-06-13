@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team - Hongming Intelligent Tech Team</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Hongming Intelligent Tech Team</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="skills.html">Skill Tree</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h2>Our Team</h2>
+        <p>Meet our passionate, talented members from various universities and disciplines.</p>
+    </section>
+
+    <section class="team-list">
+
+        <div class="team-card" onclick="openModal('Alex Chen', 'Mechanical Engineering', 'Leader, expert in robot design', 'assets/images/member1.jpg', 'https://github.com/alexchen', 'https://linkedin.com/in/alexchen')">
+            <img src="assets/images/member1.jpg" alt="Alex Chen">
+            <h3>Hongyi Hao</h3>
+            <p>Mechanical Engineering</p>
+        </div>
+
+        <div class="team-card" onclick="openModal('Linda Zhao', 'Computer Science', 'Software developer, AI lover', 'assets/images/member2.jpg', 'https://github.com/lindazhao', 'https://linkedin.com/in/lindazhao')">
+            <img src="assets/images/member2.jpg" alt="Linda Zhao">
+            <h3>Linda Zhao</h3>
+            <p>Computer Science</p>
+        </div>
+
+        <div class="team-card" onclick="openModal('Kevin Li', 'Electronic Engineering', 'Embedded system specialist', 'assets/images/member3.jpg', 'https://github.com/kevinli', 'https://linkedin.com/in/kevinli')">
+            <img src="assets/images/member3.jpg" alt="Kevin Li">
+            <h3>Kevin Li</h3>
+            <p>Electronic Engineering</p>
+        </div>
+
+        <div class="team-card" onclick="openModal('Sophia Wang', 'Industrial Design', 'Robot appearance designer', 'assets/images/member4.jpg', 'https://github.com/sophiawang', 'https://linkedin.com/in/sophiawang')">
+            <img src="assets/images/member4.jpg" alt="Sophia Wang">
+            <h3>Sophia Wang</h3>
+            <p>Industrial Design</p>
+        </div>
+
+    </section>
+
+    <!-- Modal -->
+    <div id="memberModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Member Photo" />
+            <h3 id="modalName"></h3>
+            <p id="modalMajor"></p>
+            <p id="modalDescription"></p>
+            <div class="social-links">
+                <a id="githubLink" href="" target="_blank">GitHub</a> |
+                <a id="linkedinLink" href="" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Hongming Intelligent Tech Team</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/team.js"></script>
+</body>
+</html>

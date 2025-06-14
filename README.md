@@ -1,30 +1,48 @@
-# Lanyi_adict and his friends Web
-## Introduction 
-This is my personal website, which introduces my personal education situation, paper publication, research direction, project situation, personal skills, and award situation. It also includes the official website of **Hongming Intelligent Technology Co., Ltd**. This website is a technology team that I led during my undergraduate studies. Most of the members are college students in the fields of science and engineering, covering multiple engineering majors such as **Computer Science, Artificial Intelligence, Mechanical Engineering, Microelectronics, and Applied Statistics**. These websites provided introductions to team members and also introduced our open source project. This website is implemented using technologies such as **HTML5**, **CSS**, and **JavaScript**, while the membership diagram and skill tree are implemented using **Echarts** technology.<br>
-<img src = "img/HongMing_Logo.png" width = "50%" ><br>
-**Hongming Intelligent Technology**<br>
+# Personal Website
+
+This is my personal website showcasing my projects, blog, and skills. The site is built with Jekyll and hosted on GitHub Pages.
+
+## Website Preview
+
+![Website Screenshot](https://picsum.photos/800/400)
+
+## Key Features
+
+- Personal profile display
+- Project portfolio showcase
+- Blog article publication
+- Skills visualization
+- Contact information
+
+## Tech Stack
+
+- Jekyll: Static site generator
+- SCSS: Stylesheet language
+- JavaScript: Interactive functionality
+- GitHub Pages: Hosting platform
 
 
-## Relationship map and skill tree
-<img src = "img/.png">
-This graph is drawn using the Echarts technique.
+## Deployment
 
-```javascript
+This site is automatically deployed to GitHub Pages. Simply push changes to the `main` branch.
 
-```
-The formatter function is used to customize the display of a tooltip. When a user hovers over a data node on the chart, a tooltip displays the details of the data.
+## Directory Structure.
+├── assets               # Static resources
+│   ├── css              # Compiled CSS
+│   ├── img              # Images
+│   └── js               # JavaScript files
+├── index.html           # Home page
+└── README.md            # Project documentation
+## Contributing
 
-```javascript
+Contributions are welcome! Please submit issues and pull requests to help improve this project.
 
-```
-This is the code for the Ecahrts code to build each node of the image
-```javascript
+## License
 
-```
-This code snippet is used to define the style and label of the line (edge) between two nodes in the diagram.
+This project is licensed under the [MIT License](LICENSE).
 
-## Continue development
-I will continue to develop the front-end of the website based on my learning situation, and I will progress and learn together with my team members
+## Contact Me
 
-## Warning
-There are still some bugs in this website, which means that I have to fix it in the future.
+If you have any questions or suggestions, feel free to reach out:
+- Email: Lanyi_adict@outlook.com
+- GitHub: https://github.com/HongyiHao-SXIT

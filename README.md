@@ -1,48 +1,64 @@
-# Personal Website
+# Hongyi Hao's Personal Website
 
-This is my personal website showcasing my projects, blog, and skills. The site is built with Jekyll and hosted on GitHub Pages.
+This repository hosts the source code for Hongyi Hao's personal website, showcasing his academic background, projects, publications, and professional experiences in computer science, robotics, and artificial intelligence.
 
-## Website Preview
+## Overview
 
-![Website Screenshot](https://picsum.photos/800/400)
-
-## Key Features
-
-- Personal profile display
-- Project portfolio showcase
-- Blog article publication
-- Skills visualization
+The website serves as a comprehensive portfolio highlighting:
+- Personal profile and academic background
+- Research interests in robotics and AI
+- Awards and honors
+- Internship experiences
+- Publications and patents
+- Project portfolio
 - Contact information
 
 ## Tech Stack
 
-- Jekyll: Static site generator
-- SCSS: Stylesheet language
-- JavaScript: Interactive functionality
-- GitHub Pages: Hosting platform
+- **Static Content**: HTML5
+- **Styling**: CSS3 with SCSS preprocessing
+- **Interactivity**: JavaScript
+- **Hosting**: GitHub Pages
+- **Static Site Generation**: Jekyll
 
+## Directory Structure
+
+```
+├── assets/               # Static resources
+│   ├── css/              # Compiled CSS stylesheets
+│   ├── img/              # Image assets
+│   └── js/               # JavaScript files
+├── data/                 # Supplementary data (e.g., CV)
+├── index.html            # Main homepage
+├── README.md             # Project documentation
+└── LICENSE               # MIT License file
+```
+
+## Features
+
+- Responsive design for various devices
+- Interactive elements for publications (abstract/bibtex toggling)
+- Clean, academic-style layout
+- Sections for honors, internships, patents, and projects
+- Easy navigation with clear section headings
 
 ## Deployment
 
-This site is automatically deployed to GitHub Pages. Simply push changes to the `main` branch.
+The site is automatically deployed to GitHub Pages. Simply push changes to the `main` branch, and the updates will be reflected at [https://hongyihao-sxit.github.io/HongyiHao.github.io/](https://hongyihao-sxit.github.io/HongyiHao.github.io/) within a few minutes.
 
-## Directory Structure.
-├── assets               # Static resources
-│   ├── css              # Compiled CSS
-│   ├── img              # Images
-│   └── js               # JavaScript files
-├── index.html           # Home page
-└── README.md            # Project documentation
 ## Contributing
 
-Contributions are welcome! Please submit issues and pull requests to help improve this project.
+Contributions are welcome! If you find any issues or have suggestions for improvements, please:
+1. Submit an issue describing the problem or suggestion
+2. Create a pull request with your proposed changes
+3. Ensure your code follows the existing style and structure
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contact Me
+## Contact
 
-If you have any questions or suggestions, feel free to reach out:
+For questions or inquiries, please reach out to:
 - Email: Lanyi_adict@outlook.com
-- GitHub: https://github.com/HongyiHao-SXIT
+- GitHub: [HongyiHao-SXIT](https://github.com/HongyiHao-SXIT)

@@ -60,6 +60,10 @@
   .honor-item, .internship-item {
     margin-bottom: 8px;
   }
+  .paper-links {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
   </style>
   <link rel="shortcut icon" href="images/apple-touch-ri-logo-white-120x120.png">
   <script type="text/javascript" src="js/hidebib.js"></script>
@@ -102,7 +106,7 @@
       
       <p><strong>Robots:</strong> I am passionate about exploring the potential of humanoid robots. My goal is to develop humanoid robots that can perform complex tasks in challenging environments.</p>
       
-      <p>Email: Lanyi_adict@outlook.com</p>
+      <p>Email: Lanyi_adict[AT]outlook.com</p>
     </td>
   </tr>
 </table>
@@ -118,10 +122,11 @@
     <tr>
       <td>
         <ul>
-          <li class="honor-item">Third Prize in the "Zhongkong Xinda Cup" North China Five Provinces and Hong Kong, Macao and Taiwan College Students Computer Programming Competition (Provincial Level)</li>
-          <li class="honor-item">Second Prize in the "Youth Innovation and Entrepreneurship Competition of Shanxi Central Urban Agglomeration 'Creating Youth'" (Provincial Level)</li>
-          <li class="honor-item">Excellence Award in the "Maker China" Shanxi Small and Medium-sized Enterprise Innovation and Entrepreneurship Competition (Provincial Level)</li>
           <li class="honor-item">Special Prize in the 19th "Challenge Cup" Shanxi Province College Students' Extracurricular Academic and Technological Works Competition (Provincial Level)</li>
+          <li class="honor-item">Second Prize in the "Youth Innovation and Entrepreneurship Competition of Shanxi Central Urban Agglomeration 'Creating Youth'" (Provincial Level)</li>
+          <li class="honor-item">Third Prize in the "Zhongkong Xinda Cup" North China Five Provinces and Hong Kong, Macao and Taiwan College Students Computer Programming Competition (Provincial Level)</li>
+          <li class="honor-item">Second Prize in the 2025 Shanxi Province "Five Small" Innovation Competition(Provincial Level)</li>
+          <li class="honor-item">Excellence Award in the "Maker China" Shanxi Small and Medium-sized Enterprise Innovation and Entrepreneurship Competition (Provincial Level)</li>
           <li class="honor-item">Second-class Department Scholarship in 2022-2023 Academic Year</li>
           <li class="honor-item">Third-class Department Scholarship in 2023-2024 Academic Year</li>
           <li class="honor-item">Individual Scholarship in 2023-2024 Academic Year</li>
@@ -139,17 +144,60 @@
     <tr><td><sectionheading>Publications</sectionheading></td></tr>
   </table>
 
+    <!-- Multi-Agent Paper -->
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+    <tr>
+      <td width="40%" valign="top" align="center">
+          <img src="images/MADRL/MADRL.png" alt="Multi-Agent Reinforcement Learning Project" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      </td>
+      <td width="60%" valign="top">
+        <p>
+          <a href="#MultiAgent" id="MultiAgent">
+            <heading>Research and Application of Multi-Agent Cooperative Decision Algorithm Based on Deep Reinforcement Learning</heading>
+          </a>
+          <br>
+        </p>
+        <p>Hongyi Hao*<br>ICDACAI 2025<br></p>
+        
+        <div class="paper" id="multiagent_paper">
+          <div class="paper-links">
+            <a href="projects/multi_agent.html">webpage</a> |
+            <a href="papers/multi_agent.pdf">pdf</a> |
+            <a href="javascript:toggleblock('multiagent_abs')">abstract</a> |
+            <a shape="rect" href="javascript:togglebib('multiagent_paper')" class="togglebib">bibtex</a> |
+            <a href="https://arxiv.org/abs/XXXX.XXXXX">arXiv</a>
+          </div>
+
+          <div id="multiagent_abs" style="display:none">
+            <p align="justify">
+              <i>In complex dynamic environment, there are some problems in multi-agent collaborative decision-making, such as non-stationarity, credit distribution deviation and imperfect topological relationship modeling. In this article, the deep reinforcement learning (DRL) algorithm Att-GNN-MARL, which combines attention mechanism and GNN, is proposed to improve the cooperative efficiency and strategic stability of multi-agent system (MAS). Based on the centralized training decentralized execution (CTDE) framework, this study uses graph neural network (GNN) to model the spatial connection of agents, introduces attention mechanism to enhance the perception of key neighbors, and designs a counterfactual reward correction mechanism to optimize local credit allocation. In the collaborative control scenario of urban traffic signals, the experiments based on real road network on SUMO simulation platform show that the proposed algorithm reduces the average waiting time of vehicles to 54.3 seconds during rush hours, which is 22.3% less than that of QMIX. The total traffic volume reached 24,108 vehicles, which was significantly better than the comparison method. The number of rounds of strategy convergence is 640, and the learning efficiency is good. The research shows that the cooperative learning mechanism combining structural perception and dynamic attention can improve the overall performance of MAS in highly coupled tasks to some extent.</i>
+            </p>
+          </div>
+
+          <div id="multiagent_paper_bib" style="display:none">
+            <pre xml:space="preserve">
+@article{hao2025multiagent,
+  title={Research and Application of Multi-Agent Cooperative Decision Algorithm Based on Deep Reinforcement Learning},
+  author={Hongyi Hao},
+  journal={ICDACAI 2025},
+  year={2025}
+}
+            </pre>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+
   <!-- ECHOES Paper -->
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
     <tr>
       <td width="40%" valign="top" align="center">
-        <a href="">
           <img src="images/ECHOES/ECHOES.png" alt="ECHOES Project" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-        </a>
       </td>
       <td width="60%" valign="top">
         <p>
-          <a href="" id="ECHOES">
+          <a href="#ECHOES" id="ECHOES">
             <heading>ECHOES: input sensing and rEconstruCtion model utilizing CNN and LSTM witH mObilE Sensor data</heading>
           </a>
           <br>
@@ -157,11 +205,13 @@
         <p>Hongyi Hao*<br>ICICC 2025<br></p>
         
         <div class="paper" id="echoes_paper">
-          <a href="">webpage</a> |
-          <a href="">pdf</a> |
-          <a href="javascript:toggleblock('echoes_abs')">abstract</a> |
-          <a shape="rect" href="javascript:togglebib('echoes_paper')" class="togglebib">bibtex</a> |
-          <a href="">arXiv</a> |
+          <div class="paper-links">
+            <a href="projects/echoes.html">webpage</a> |
+            <a href="papers/echoes.pdf">pdf</a> |
+            <a href="javascript:toggleblock('echoes_abs')">abstract</a> |
+            <a shape="rect" href="javascript:togglebib('echoes_paper')" class="togglebib">bibtex</a> |
+            <a href="https://arxiv.org/abs/XXXX.XXXXX">arXiv</a>
+          </div>
 
           <div id="echoes_abs" style="display:none">
             <p align="justify">
@@ -188,13 +238,11 @@
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
     <tr>
       <td width="40%" valign="top" align="center">
-        <a href="">
           <img src="images/SAPSC/SAPSC.png" alt="Slope Stability Analysis Project" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-        </a>
       </td>
       <td width="60%" valign="top">
         <p>
-          <a href="" id="SlopeStability">
+          <a href="#SlopeStability" id="SlopeStability">
             <heading>Stability Analysis of Polygonal Slopes Considering Spatial Variability of Soil Parameters</heading>
           </a>
           <br>
@@ -202,11 +250,13 @@
         <p>Hongyi Hao*<br>ICICDA 2025<br></p>
         
         <div class="paper" id="slope_paper">
-          <a href="">webpage</a> |
-          <a href="">pdf</a> |
-          <a href="javascript:toggleblock('slope_abs')">abstract</a> |
-          <a shape="rect" href="javascript:togglebib('slope_paper')" class="togglebib">bibtex</a> |
-          <a href="">arXiv</a> |
+          <div class="paper-links">
+            <a href="projects/slope_stability.html">webpage</a> |
+            <a href="papers/slope_stability.pdf">pdf</a> |
+            <a href="javascript:toggleblock('slope_abs')">abstract</a> |
+            <a shape="rect" href="javascript:togglebib('slope_paper')" class="togglebib">bibtex</a> |
+            <a href="https://arxiv.org/abs/XXXX.XXXXX">arXiv</a>
+          </div>
 
           <div id="slope_abs" style="display:none">
             <p align="justify">
@@ -229,42 +279,42 @@
     </tr>
   </table>
 
-  <!-- Multi-Agent Paper -->
+    <!-- YOLO Pruning Paper -->
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
     <tr>
       <td width="40%" valign="top" align="center">
-        <a href="">
-          <img src="images/MADRL/MADRL.png" alt="Multi-Agent Reinforcement Learning Project" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-        </a>
+          <img src="images/SPE/SPE.png" alt="YOLO Pruning Project" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
       </td>
       <td width="60%" valign="top">
         <p>
-          <a href="" id="MultiAgent">
-            <heading>Research and Application of Multi-Agent Cooperative Decision Algorithm Based on Deep Reinforcement Learning</heading>
+          <a href="#YOLOPruning" id="YOLOPruning">
+            <heading>Structured Pruning for Efficient YOLO11 Deployment: A Comparative Study of LAMP and SPPF Algorithms</heading>
           </a>
           <br>
         </p>
-        <p>Hongyi Hao*<br>ICDACAI 2025<br></p>
+        <p>Hongyi Hao*<br>ICMAEE 2025<br></p>
         
-        <div class="paper" id="multiagent_paper">
-          <a href="">webpage</a> |
-          <a href="">pdf</a> |
-          <a href="javascript:toggleblock('multiagent_abs')">abstract</a> |
-          <a shape="rect" href="javascript:togglebib('multiagent_paper')" class="togglebib">bibtex</a> |
-          <a href="">arXiv</a> |
+        <div class="paper" id="yolo_paper">
+          <div class="paper-links">
+            <a href="projects/yolo_pruning.html">webpage</a> |
+            <a href="papers/yolo_pruning.pdf">pdf</a> |
+            <a href="javascript:toggleblock('yolo_abs')">abstract</a> |
+            <a shape="rect" href="javascript:togglebib('yolo_paper')" class="togglebib">bibtex</a> |
+            <a href="https://arxiv.org/abs/XXXX.XXXXX">arXiv</a>
+          </div>
 
-          <div id="multiagent_abs" style="display:none">
+          <div id="yolo_abs" style="display:none">
             <p align="justify">
-              <i>In complex dynamic environment, there are some problems in multi-agent collaborative decision-making, such as non-stationarity, credit distribution deviation and imperfect topological relationship modeling. In this article, the deep reinforcement learning (DRL) algorithm Att-GNN-MARL, which combines attention mechanism and GNN, is proposed to improve the cooperative efficiency and strategic stability of multi-agent system (MAS). Based on the centralized training decentralized execution (CTDE) framework, this study uses graph neural network (GNN) to model the spatial connection of agents, introduces attention mechanism to enhance the perception of key neighbors, and designs a counterfactual reward correction mechanism to optimize local credit allocation. In the collaborative control scenario of urban traffic signals, the experiments based on real road network on SUMO simulation platform show that the proposed algorithm reduces the average waiting time of vehicles to 54.3 seconds during rush hours, which is 22.3% less than that of QMIX. The total traffic volume reached 24,108 vehicles, which was significantly better than the comparison method. The number of rounds of strategy convergence is 640, and the learning efficiency is good. The research shows that the cooperative learning mechanism combining structural perception and dynamic attention can improve the overall performance of MAS in highly coupled tasks to some extent.</i>
+              <i>This study explores the integration of two structured pruning techniques - Layer Adaptive Magnitude Pruning (LAMP) and Spatial Pyramid Pooling Framework (SPPF) - into YOLO-based object detection models to enhance their deployment efficiency on edge computing platforms with limited computational resources. LAMP achieves high compression rates by dynamically adjusting the sparsity of each layer, making it particularly suitable for real-time applications such as medical imaging (e.g., rib fracture detection) and traffic monitoring, providing an effective solution for mobile terminal deployment. Meanwhile, SPPF improves multi-scale feature fusion and enhances detection robustness in complex environments (such as forestry pest identification and satellite image analysis), significantly boosting the model's generalization ability. Experimental evaluations across multiple domains including medical diagnosis, agricultural monitoring, and intelligent transportation demonstrate that these two methods not only significantly reduce model size and computational overhead but also maintain or even improve detection accuracy. These findings offer practical insights for optimizing lightweight YOLO variants, facilitating their widespread adoption in practical edge AI applications that prioritize efficiency and accuracy.</i>
             </p>
           </div>
 
-          <div id="multiagent_paper_bib" style="display:none">
+          <div id="yolo_paper_bib" style="display:none">
             <pre xml:space="preserve">
-@article{hao2025multiagent,
-  title={Research and Application of Multi-Agent Cooperative Decision Algorithm Based on Deep Reinforcement Learning},
+@article{hao2025yolo,
+  title={Structured Pruning for Efficient YOLO11 Deployment: A Comparative Study of LAMP and SPPF Algorithms},
   author={Hongyi Hao},
-  journal={ICDACAI 2025},
+  journal={ICMAEE 2025},
   year={2025}
 }
             </pre>
@@ -286,9 +336,9 @@
     <tr>
       <td>
         <ul>
-          <li class="internship-item"><strong>Nanjing Archmind Technology</strong> (2023.6 - 2023.8)
-          <li class="internship-item"><strong>Nanjing Institute of Automation, Chinese Academy of Sciences</strong> (2024.6 - Present)
-          <li class="internship-item"><strong>Carnegie Mellon University</strong>, Distributed Machine Learning: Foundations and Algorithms (2025.5.10 - 2025.8.8)
+          <li class="internship-item"><strong>Nanjing Archmind Technology</strong> (2023.6 - 2023.8)</li>
+          <li class="internship-item"><strong>Nanjing Institute of Automation, Chinese Academy of Sciences</strong> (2024.6 - Present)</li>
+          <li class="internship-item"><strong>Carnegie Mellon University</strong>, Distributed Machine Learning: Foundations and Algorithms (2025.5.10 - 2025.8.8)</li>
         </ul>
       </td>
     </tr>
@@ -341,9 +391,7 @@
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
     <tr>
       <td width="40%" valign="top" align="center">
-        <a href="https://hongming-intelligent-technology.github.io/HongMing_Intelligent_Technology.github.io/">
           <img src="images/HongMing_Logo.png" alt="HongMing Intelligent Technology Team" width="70%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-        </a>
       </td>
       <td width="60%" valign="top">
         <p>
@@ -354,8 +402,10 @@
         </p>
 
         <div class="paper" id="hongming_project">
-          <a href="https://hongming-intelligent-technology.github.io/HongMing_Intelligent_Technology.github.io/">webpage</a> |
-          <a href="https://github.com/Hongming-Intelligent-Technology">code</a>
+          <div class="paper-links">
+            <a href="https://hongming-intelligent-technology.github.io/HongMing_Intelligent_Technology.github.io/">webpage</a> |
+            <a href="https://github.com/Hongming-Intelligent-Technology">code</a>
+          </div>
 
           <p align="justify">
             <i>Founded by <b>Hao Hongyi</b> at the undergraduate level, we are committed to the research and development of <b>advanced robotics</b> and <b>artificial intelligence systems</b>, and will also conduct research in <b>software engineering, simulator, microelectronics, mechanical design, Reinforcement Learning, Deep Learning</b> and other related directions according to personal development direction.</i>
